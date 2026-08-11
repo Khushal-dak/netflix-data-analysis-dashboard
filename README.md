@@ -6,6 +6,11 @@ An end-to-end **Netflix Data Analysis project** built using **Python, Pandas, Ma
 
 The project focuses on **data cleaning, exploratory data analysis, visualization, business insight generation and interactive dashboard development**.
 
+## 🖥️ Dashboard Preview
+
+![Streamlit Dashboard](overview.png)
+
+> **Minimal interface. Clear visualizations. Business-focused insights.**
 ---
 
 ## 🚀 Project at a Glance
@@ -332,13 +337,6 @@ Visualization
 ```
 
 This provides a simple way to explore relationships between available dataset columns.
-
-## 🖥️ Dashboard Preview
-
-![Streamlit Dashboard](overview.png)
-
-> **Minimal interface. Clear visualizations. Business-focused insights.**
-
 ---
 
 # 💡 Consolidated Business Insights

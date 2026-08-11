@@ -24,19 +24,21 @@ The project focuses on **data cleaning, exploratory data analysis, visualization
 
 ## 🎯 Project Objective
 
-The objective of this project is to transform raw Netflix content data into a **clean, reliable and analysis-ready dataset** and generate meaningful business insights from it.
+The objective of this project is to prepare, analyze and visualize Netflix content data for **business analytics and reporting**.
+
+The project follows a structured workflow starting from raw data inspection and cleaning, followed by analysis, visualization and business insight generation.
 
 ### Key Questions
 
-- 🎬 How many Movies and TV Shows are available?
+- 🎬 How is Netflix content distributed between Movies and TV Shows?
 - 🌍 Which countries contribute the most Netflix content?
 - 📈 How has Netflix content production changed over the years?
-- 📊 What meaningful patterns can be identified?
-- 🌐 How can the analysis be presented through an interactive dashboard?
+- 📊 What meaningful patterns can be identified from the dataset?
+- 🌐 How can the findings be presented through an interactive dashboard?
 
 ---
 
-## 🔄 Project Workflow
+## 🔄 Overall Project Workflow
 
 ```text
 📁 Raw Netflix Dataset
@@ -51,7 +53,7 @@ The objective of this project is to transform raw Netflix content data into a **
         ↓
 💡 Business Insights
         ↓
-🌐 Streamlit Dashboard
+🌐 Interactive Streamlit Dashboard
 ```
 
 ---
@@ -81,11 +83,35 @@ The repository contains both the **raw dataset** and the **cleaned dataset**.
 
 # 🧹 Task 1 — Netflix Data Cleaning & Preparation
 
-### 🎯 Objective
+## 📌 Task Description
 
-Prepare the Netflix dataset for reliable business analysis and reporting.
+Prepare and organize the Netflix dataset for **business analytics and reporting**.
 
-### 🔧 Work Performed
+## 🔄 Task Workflow
+
+1. Import the dataset using Python and Pandas.
+2. Identify and handle missing values.
+3. Remove duplicate records and formatting inconsistencies.
+4. Standardize columns such as **Country, Rating and Type**.
+5. Export the cleaned dataset for analysis.
+
+## 🧠 Skills You Will Learn
+
+- Pandas Fundamentals
+- Data Cleaning
+- Data Preprocessing
+- Data Quality Management
+
+## 🔑 Key Features
+
+- Data Import
+- Missing Value Handling
+- Data Cleaning
+- Dataset Preparation
+
+## 🔧 Work Performed
+
+During the implementation:
 
 - Imported the dataset using Python and Pandas
 - Inspected dataset structure and data types
@@ -100,7 +126,7 @@ Prepare the Netflix dataset for reliable business analysis and reporting.
 - Standardized important categorical columns
 - Exported the cleaned dataset
 
-### 🛡️ Data Quality Approach
+## 🛡️ Data Quality Approach
 
 Missing information was **not blindly replaced**.
 
@@ -110,91 +136,168 @@ This approach helps maintain **data integrity and analytical reliability**.
 
 ---
 
-# 🎬 Task 2 — Content Type Analysis
+# 🎬 Task 2 — Content Type Analysis Dashboard
 
-### 🎯 Objective
+## 📌 Task Description
 
 Analyze the distribution of **Movies and TV Shows** available on Netflix.
 
-### 📊 Analysis
+## 🔄 Task Workflow
 
-The `type` column was used to calculate the total number of Movies and TV Shows.
+1. Load the cleaned dataset.
+2. Calculate the total number of Movies and TV Shows.
+3. Create visualizations for content distribution.
+4. Compare content proportions.
+5. Summarize key findings.
 
-### 📈 Visualization
+## 🧠 Skills You Will Learn
 
-![Movies vs TV Shows](task2-content-type-1.png)
+- Data Visualization
+- Matplotlib
+- Seaborn
+- Exploratory Data Analysis
 
-### 💡 Key Insight
+## 🔑 Key Features
+
+- Content Analysis
+- Charts & Visualizations
+- Distribution Insights
+- Summary Report
+
+## 📄 Task Requirements
+
+![Task 2 Requirements](task2-content-type-1.png)
+
+## 📊 Analysis Performed
+
+The `type` column was analyzed to calculate the total number of Movies and TV Shows.
+
+### Results
+
+- 🎬 Movies: **6,126**
+- 📺 TV Shows: **2,664**
+- 📊 Total Titles: **8,790**
+
+## 📈 Visualization
+
+![Task 2 Content Distribution](task2-content-type-2.png)
+
+## 💡 Key Finding
 
 **Movies represent the majority of Netflix titles**, while TV Shows form a comparatively smaller portion of the dataset.
-
-### 📊 Additional Visualization
-
-![Content Type Analysis](task2-content-type-2.png)
 
 ---
 
 # 🌍 Task 3 — Country-Wise Netflix Content Analysis
 
-### 🎯 Objective
+## 📌 Task Description
 
-Analyze Netflix content availability across different countries and identify major content-producing regions.
+Analyze Netflix content availability across different countries.
 
-### 🔧 Analysis Performed
+## 🔄 Task Workflow
 
-- Examined country information
-- Checked country values
-- Calculated country-wise content counts
-- Ranked countries by content volume
-- Identified the Top 10 countries
-- Compared Top 10 countries against the remaining countries
+1. Extract and clean country information.
+2. Calculate content count by country.
+3. Identify top content-producing countries.
+4. Create charts and rankings.
+5. Generate business insights.
 
-![Top 10 Countries](task3-country-analysis-1.png)
+## 🧠 Skills You Will Learn
 
-### 🏆 Top 10 Content-Producing Countries
+- GroupBy Operations
+- Data Aggregation
+- Business Analytics
+- Visualization Techniques
 
-### 💡 Key Insight
+## 🔑 Key Features
 
-The **United States** contributes the largest number of titles in the dataset, followed by other major content-producing countries such as **India and the United Kingdom**.
+- Country Analysis
+- Ranking Reports
+- Geographic Insights
+- Data Visualization
 
-### 📊 Top 10 vs Remaining Countries
+## 📄 Task Requirements
 
-![Country Contribution](task3-country-analysis-2.png)
+![Task 3 Requirements](task3-country-analysis-1.png)
 
-### 🔎 Business Perspective
+## 📊 Analysis Performed
 
-A relatively small group of countries contributes a significant portion of the available Netflix content, indicating a **concentrated content-production footprint**.
+The country column was analyzed to:
+
+- Examine country values
+- Calculate country-wise content counts
+- Rank countries by content volume
+- Identify the Top 10 content-producing countries
+- Compare the Top 10 countries with the remaining countries
+
+## 📈 Country Analysis Results
+
+![Task 3 Country Analysis](task3-country-analysis-2.png)
+
+## 💡 Key Findings
+
+The **United States** contributes the largest number of titles in the analyzed dataset, followed by other major content-producing countries including **India and the United Kingdom**.
+
+The analysis also compares the contribution of the **Top 10 countries against the remaining countries**.
 
 ---
 
-# 📈 Task 4 — Trend Analysis by Release Year
+# 📈 Task 4 — Netflix Content Trend Analysis
 
-### 🎯 Objective
+## 📌 Task Description
 
-Analyze how Netflix content production has changed over time.
+Analyze Netflix content production trends over different release years.
 
-### 🔧 Analysis Performed
+## 🔄 Task Workflow
 
-- Validated the `release_year` column
-- Confirmed numerical data type
-- Checked the year range
-- Grouped titles by release year
-- Calculated yearly content counts
-- Calculated year-over-year changes
-- Identified the highest production year
-- Identified major growth and decline periods
+1. Load the cleaned dataset.
+2. Group content by release year.
+3. Calculate yearly content counts.
+4. Analyze growth and decline trends.
+5. Create visualizations.
+6. Summarize key findings.
 
-### 📈 Netflix Content Production Trend
+## 🧠 Skills Applied
 
-![Release Year Trend](task4-release-trend-1.png)
+- Data Aggregation
+- Time-Based Analysis
+- Trend Analysis
+- Data Visualization
+- Insight Generation
 
-### 💡 Key Insight
+## 🔑 Key Features
+
+- Release-Year Analysis
+- Yearly Content Counts
+- Growth & Decline Analysis
+- Trend Visualization
+- Business Insights
+
+## 📄 Task Analysis
+
+The `release_year` column was validated before performing the analysis.
+
+The analysis included:
+
+- Checking the data type
+- Checking the minimum and maximum release years
+- Grouping titles by release year
+- Calculating yearly content counts
+- Calculating year-over-year percentage changes
+- Identifying the highest production year
+- Identifying major growth and decline periods
+
+## 📈 Visualization
+
+![Netflix Release Year Trend](task4-release-trend-1.png)
+
+## 📊 Detailed Analysis
+
+![Netflix Release Trend Analysis](task4-release-trend-2.png)
+
+## 💡 Key Finding
 
 Netflix content production increased significantly during the **2010s**, reaching its highest yearly content count around **2018** in the analyzed dataset.
-
-### 📊 Detailed Trend Analysis
-
-![Release Trend Analysis](task4-release-trend-2.png)
 
 The trend highlights a major expansion of Netflix's content library during the mid-to-late 2010s.
 
@@ -202,9 +305,9 @@ The trend highlights a major expansion of Netflix's content library during the m
 
 # 🌐 Interactive Streamlit Dashboard
 
-The project includes an interactive **Streamlit dashboard** designed to present the most important analytical results in a simple and accessible interface.
+The project includes an interactive **Streamlit dashboard** that brings the major findings together into a simple analytical interface.
 
-### Dashboard Features
+## 📊 Dashboard Features
 
 - 📊 Dataset Overview
 - 🎬 Movie Count
@@ -216,7 +319,7 @@ The project includes an interactive **Streamlit dashboard** designed to present 
 - 📅 Release-Year Trend
 - 🔎 Dataset Explorer
 
-### 🔎 Dataset Explorer
+## 🔎 Dataset Explorer
 
 Users can select:
 
@@ -228,19 +331,17 @@ Y-Axis
 Visualization
 ```
 
-This provides a simple way to explore numerical/date-based relationships within the dataset.
+This provides a simple way to explore relationships between available dataset columns.
 
----
+## 🖥️ Dashboard Preview
 
-# 🖥️ Dashboard Preview
-
-![Dashboard Overview](overview.png)
+![Streamlit Dashboard](overview.png)
 
 > **Minimal interface. Clear visualizations. Business-focused insights.**
 
 ---
 
-# 💡 Key Business Insights
+# 💡 Consolidated Business Insights
 
 ### 🎬 Content Strategy
 
@@ -252,11 +353,11 @@ The United States is the largest contributor of Netflix titles, while India and 
 
 ### 📈 Historical Growth
 
-Netflix content production expanded rapidly during the 2010s, with the highest yearly title count occurring around **2018** in the analyzed data.
+Netflix content production expanded rapidly during the 2010s, with the highest yearly title count occurring around **2018** in the analyzed dataset.
 
 ### 📊 Content Concentration
 
-The Top 10 content-producing countries account for a substantial portion of the overall content, highlighting geographic concentration in Netflix's content library.
+The Top 10 content-producing countries account for a substantial portion of the overall content, highlighting geographic concentration within the Netflix content library.
 
 ---
 
@@ -306,30 +407,33 @@ netflix-data-analysis-dashboard/
 
 # 📓 Analysis Notebooks
 
-### Task 1
+## Task 1
 
 `Task_1_Netflix_Data_Analysis.ipynb`
 
-Contains:
+Contains the complete data cleaning and preparation workflow.
+
+### Includes
 
 - Data inspection
 - Missing-value analysis
 - Duplicate checking
 - Categorical analysis
+- Data quality checks
 - Data cleaning
 - Validation
 
-### Tasks 2 & 3
+## Tasks 2 & 3
 
 `Task_2_&_3_Netflix_Data_Analysis.ipynb`
 
-Contains:
+Contains the analytical implementation for:
 
-- Content type analysis
-- Country-wise analysis
+- Content Type Analysis
+- Country-Wise Analysis
 - Calculations
 - Visualizations
-- Business insights
+- Business Insights
 
 The notebooks keep the analytical workflow **traceable and reproducible**.
 
@@ -343,7 +447,8 @@ This repository contains:
 - ✅ Cleaned Dataset
 - ✅ Data Cleaning Notebook
 - ✅ Analysis Notebooks
-- ✅ Visualizations
+- ✅ Task Requirement Screenshots
+- ✅ Analytical Visualizations
 - ✅ Streamlit Dashboard
 - ✅ Project Presentation
 - ✅ Task Requirements PDF
@@ -353,19 +458,19 @@ This repository contains:
 
 # ▶️ How to Run the Dashboard
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/Khushal-dak/netflix-data-analysis-dashboard.git
 ```
 
-### 2️⃣ Open the project
+### 2️⃣ Open the Project
 
 ```bash
 cd netflix-data-analysis-dashboard
 ```
 
-### 3️⃣ Install dependencies
+### 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -389,7 +494,7 @@ This project demonstrates practical understanding of:
 - 🔍 Exploratory Data Analysis
 - 📊 Data Visualization
 - 📈 Trend Analysis
-- 🌍 Country-wise Analysis
+- 🌍 Country-Wise Analysis
 - 📋 Data Aggregation
 - 🛡️ Data Quality Management
 - 💡 Business Insight Generation

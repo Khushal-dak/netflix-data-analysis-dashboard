@@ -4,5 +4,3 @@ numpy
 pandas
 matplotlib
 seaborn
-
-Libraries essential to install....

@@ -1,0 +1,8 @@
+streamlit
+plotly.express
+numpy
+pandas
+matplotlib
+seaborn
+
+Libraries essential to install....

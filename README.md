@@ -149,9 +149,9 @@ Analyze Netflix content availability across different countries and identify maj
 - Identified the Top 10 countries
 - Compared Top 10 countries against the remaining countries
 
-### 🏆 Top 10 Content-Producing Countries
-
 ![Top 10 Countries](task3-country-analysis-1.png)
+
+### 🏆 Top 10 Content-Producing Countries
 
 ### 💡 Key Insight
 
